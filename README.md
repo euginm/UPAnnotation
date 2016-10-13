@@ -9,21 +9,21 @@ Add columns with some useful UniProt information to a genes / transcripts table.
   - *table_name* : input table name;
   - *output_name* : output table name;
   - *key* : name of the column, which contains name to retrieving information (for ex. gene name);
-  - *category* : category is abbreviation for the UniProt database name. You can find the names list here: http://www.uniprot.org/help/programmatic_access#id_mapping_examples
+  - *category* : category is abbreviation for the UniProt database name. You can find the names list here: http://www.uniprot.org/help/programmatic_access#id_mapping_examples.
 
 - optional arguments:
-  - *-h, --help* : show help information and exit
-  - *--alt_key -ak* : alternative key allow to search in UniProt base by another name in case the key name doesn't map anything. Bboth alternative key and alternative category are required to work (default: None);
+  - *-h, --help* : show help information and exit;
+  - *--alt_key -ak* : alternative key allow to search in UniProt base by another name if the key name doesn't map anything. If you give the alternative key, you should give the alternative category as well (default: None);
   - *--alt_category -ac* : category of alternative key. Can be same as main category (default: None);
-  - *--columns -c* : string with column names you wish to add to output table (for ex. ID,CC,LINK) in the order you want. (default: ID,LEN,AC,DE,CC,GO,LINK)
+  - *--columns -c* : string with column names you wish to add to output table (for ex. ID,CC,LINK) in the order you want. (default: ID,LEN,AC,DE,CC,GO,LINK).
     - Avalible options:
     - **ID** : entry name of the sequence;
     - **LEN** : the length of the molecule (AA);
     - **AC** : accession number(s) associated with an entry;
-    - **DE** : full name recommended by the UniProt consortium and a name used in biotechnological context (if exists)
-    - **CC** : text comments on the entry (function, subunit, induction etc.)
-    - **GO** : GO terms and annotations
-    - **LINK**    UniProt page adress with entry info
+    - **DE** : full name recommended by the UniProt consortium and a name used in biotechnological context (if exists);
+    - **CC** : text comments on the entry (function, subunit, induction etc.);
+    - **GO** : GO terms and annotations;
+    - **LINK** : UniProt page adress with entry info.
 
 ## Usage example:
 ### Simple
